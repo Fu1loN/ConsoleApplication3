@@ -1,5 +1,4 @@
-﻿// ConsoleApplication3.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
-//
+﻿
 
 #include <iostream>
 #include <vector>
@@ -9,6 +8,7 @@
 #include <time.h> 
 #include <thread>
 #include <chrono>
+
 using namespace std;
 
 void show_result(clock_t start, clock_t end, pair<int, int> res, vector<int>& v);
@@ -23,6 +23,7 @@ void save_states(string s, float time, int n) {
     f << n << " " << time << endl;
     f.close();
 }
+
 pair<int, int> buble(vector<int>& v) {
     auto res = make_pair(0, 0);
     int n = v.size();
